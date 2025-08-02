@@ -1,6 +1,6 @@
 ---
 title: MyArchWSL
-published: 2025-08-02
+published: 2025-08-03
 description: '在 WSL 中安装 archlinux 并配置。'
 image: ''
 tags: [archlinux,wsl]
