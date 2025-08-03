@@ -7,65 +7,68 @@ import type {
 } from "./types/config";
 import { LinkPreset } from "./types/config";
 
+// 站点配置
 export const siteConfig: SiteConfig = {
-	title: "Gakusyun",
-	subtitle: "Blog",
-	lang: "zh_CN", // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th', 'vi'
+	title: "Gakusyun", // 网站标题
+	subtitle: "Blog", // 副标题
+	lang: "zh_CN", // 语言设置：'en'（英语）、'zh_CN'（简体中文）、'zh_TW'（繁体中文）、'ja'（日语）、'ko'（韩语）、'es'（西班牙语）、'th'（泰语）、'vi'（越南语）
 	themeColor: {
-		hue: 250, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
-		fixed: false, // Hide the theme color picker for visitors
+		hue: 250, // 主题色的色相值，范围从 0 到 360。例如：红色: 0，青绿色: 200，蓝绿色: 250，粉红色: 345
+		fixed: false, // 是否隐藏主题色选择器（对访问者不可见）
 	},
 	banner: {
-		enable: true,
-		src: "assets/images/cover.webp", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-		position: "center", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
+		enable: true, // 是否启用横幅图片
+		src: "assets/images/cover.webp", // 横幅图片路径，相对于 /src 目录；若以 '/' 开头，则相对于 /public 目录
+		position: "center", // 图片对齐方式，等同于 CSS 的 object-position，仅支持 'top'、'center'、'bottom'，默认为 'center'
 		credit: {
-			enable: false, // Display the credit text of the banner image
-			text: "", // Credit text to be displayed
-			url: "", // (Optional) URL link to the original artwork or artist's page
+			enable: false, // 是否显示横幅图片的署名信息
+			text: "", // 要显示的署名文字
+			url: "", // （可选）原始图片或作者页面的链接地址
 		},
 	},
 	toc: {
-		enable: true, // Display the table of contents on the right side of the post
-		depth: 2, // Maximum heading depth to show in the table, from 1 to 3
+		enable: true, // 是否在文章右侧显示目录
+		depth: 2, // 目录中显示的最大标题层级，范围为 1 到 3
 	},
 	favicon: [
-		// Leave this array empty to use the default favicon
+		// 留空此数组将使用默认的 favicon
 		// {
-		//   src: '/favicon/icon.png',    // Path of the favicon, relative to the /public directory
-		//   theme: 'light',              // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
-		//   sizes: '32x32',              // (Optional) Size of the favicon, set only if you have favicons of different sizes
+		//   src: '/favicon/icon.png',    // favicon 路径，相对于 /public 目录
+		//   theme: 'light',              // （可选）可选 'light' 或 'dark'，仅在亮色和暗色模式使用不同图标时设置
+		//   sizes: '32x32',              // （可选）图标的尺寸，仅在使用不同尺寸图标时设置
 		// }
 	],
 };
 
+// 导航栏配置
 export const navBarConfig: NavBarConfig = {
 	links: [
-		LinkPreset.Home,
-		LinkPreset.Archive,
-		LinkPreset.About,
+		LinkPreset.Home, // 首页链接
+		LinkPreset.Archive, // 归档页面链接
+		LinkPreset.About, // 关于页面链接
 		{
 			name: "GitHub",
-			url: "https://github.com/Gakusyun", // Internal links should not include the base path, as it is automatically added
-			external: true, // Show an external link icon and will open in a new tab
+			url: "https://github.com/Gakusyun", // 内部链接无需包含基础路径，系统会自动添加
+			external: true, // 显示外部链接图标，并在新标签页中打开
 		},
 	],
 };
 
+// 个人资料配置
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/ao.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-	name: "Gakusyun",
-	bio: "我要成为计算机Master!",
+	avatar: "assets/images/ao.jpg", // 头像路径，相对于 /src 目录；若以 '/' 开头，则相对于 /public 目录
+	name: "Gakusyun", // 姓名
+	bio: "我要成为计算机Master!", // 个人简介
 	links: [
 		{
-			name: "Home Page",
-			icon: "material-symbols:house", // Visit https://icones.js.org/ for icon codes
-			// You will need to install the corresponding icon set if it's not already included
-			// `pnpm add @iconify-json/<icon-set-name>`
+			name: "主页",
+			icon: "material-symbols:house", // 图标代码，可访问 https://icones.js.org/ 查询
+			// 如果图标集尚未安装，需要手动安装对应包，例如：
+			// `pnpm add @iconify-json/<图标集名称>`
 			url: "https://gxj62.cn",
 		},
 		{
-			name: "Email",
+			name: "邮箱",
 			icon: "material-symbols:mail-rounded",
 			url: "mailto:gxj@gxj62.cn",
 		},
@@ -77,14 +80,16 @@ export const profileConfig: ProfileConfig = {
 	],
 };
 
+// 许可证配置
 export const licenseConfig: LicenseConfig = {
-	enable: true,
-	name: "CC BY-NC-SA 4.0",
-	url: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+	enable: true, // 是否启用许可证信息
+	name: "CC BY-NC-SA 4.0", // 使用的许可证名称
+	url: "https://creativecommons.org/licenses/by-nc-sa/4.0/", // 许可证链接
 };
 
+// 代码高亮显示配置（Expressive Code）
 export const expressiveCodeConfig: ExpressiveCodeConfig = {
-	// Note: Some styles (such as background color) are being overridden, see the astro.config.mjs file.
-	// Please select a dark theme, as this blog theme currently only supports dark background color
+	// 注意：部分样式（如背景色）可能被覆盖，请参见 astro.config.mjs 文件中的设置。
+	// 请选用一个深色主题，因为当前博客主题仅支持深色背景。
 	theme: "github-dark",
 };
