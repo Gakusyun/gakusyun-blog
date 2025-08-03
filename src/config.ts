@@ -21,9 +21,9 @@ export const siteConfig: SiteConfig = {
 		src: "assets/images/cover.webp", // 横幅图片路径，相对于 /src 目录；若以 '/' 开头，则相对于 /public 目录
 		position: "center", // 图片对齐方式，等同于 CSS 的 object-position，仅支持 'top'、'center'、'bottom'，默认为 'center'
 		credit: {
-			enable: false, // 是否显示横幅图片的署名信息
-			text: "", // 要显示的署名文字
-			url: "", // （可选）原始图片或作者页面的链接地址
+			enable: true, // 是否显示横幅图片的署名信息
+			text: "Espejo", // 要显示的署名文字
+			url: "https://www.pixiv.net/artworks/82910218", // （可选）原始图片或作者页面的链接地址
 		},
 	},
 	toc: {
