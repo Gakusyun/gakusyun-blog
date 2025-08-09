@@ -14,7 +14,7 @@ export const siteConfig: SiteConfig = {
 	lang: "zh_CN", // 语言设置：'en'（英语）、'zh_CN'（简体中文）、'zh_TW'（繁体中文）、'ja'（日语）、'ko'（韩语）、'es'（西班牙语）、'th'（泰语）、'vi'（越南语）
 	themeColor: {
 		hue: 250, // 主题色的色相值，范围从 0 到 360。例如：红色: 0，青绿色: 200，蓝绿色: 250，粉红色: 345
-		fixed: false, // 是否隐藏主题色选择器（对访问者不可见）
+		fixed: true, // 是否隐藏主题色选择器（对访问者不可见）
 	},
 	banner: {
 		enable: true, // 是否启用横幅图片
