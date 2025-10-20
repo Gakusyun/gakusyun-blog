@@ -65,7 +65,7 @@ export const profileConfig: ProfileConfig = {
 			icon: "material-symbols:house", // 图标代码，可访问 https://icones.js.org/ 查询
 			// 如果图标集尚未安装，需要手动安装对应包，例如：
 			// `pnpm add @iconify-json/<图标集名称>`
-			url: "https://gxj62.cn",
+			url: "https://www.gxj62.cn",
 		},
 		{
 			name: "邮箱",
