@@ -27,3 +27,8 @@ bun.lockb
 yarn.lock
 
 .vscode
+
+# Ai
+GAKUKO_WORK_LOG.MD
+CLAUDE.md
+.claude
