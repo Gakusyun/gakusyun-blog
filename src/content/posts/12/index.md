@@ -1,7 +1,7 @@
 ---
 title: 恢复工作环境 on Windows (2025)
 published: 2025-10-24
-description: "记录一下如何配置新电脑/系统"
+description: "1024程序员日快乐！"
 tags: ["windows", "Linux"]
 category: "技术"
 draft: false
@@ -18,7 +18,7 @@ lang: "cn"
 
 为保障信息安全，本文不建议选用第三方精简的系统镜像，此类镜像可能会被植入大量广告，甚至暗藏病毒。本文建议于[微软官网](https://www.microsoft.com/zh-cn/software-download/windows11)下载镜像，或借助[I tell you](https://next.itellyou.cn/)下载站下载纯净的官方镜像。
 
-本文选取 Windows 11 25H2 家庭版，原因在于笔记本出厂时已预装正版 Windows 系统。本文不提倡任何盗版激活方式，仅通过合法授权渠道进行操作。本文所选用的软件大多为免费或开源工具，以确保使用的合规性。
+> 本文选取 Windows 11 25H2 家庭版，原因在于笔记本出厂时已预装正版 Windows 系统。本文不提倡任何盗版激活方式，仅通过合法授权渠道进行操作。本文所选用的软件大多为免费或开源工具，以确保使用的合规性。
 
 然而，由于原版镜像过于庞大，本文将运用[Tiny 11 Builder](https://github.com/ntdevlabs/tiny11builder)工具制作精简版镜像，在保留核心功能的基础上移除冗余组件。
 
@@ -55,14 +55,15 @@ lang: "cn"
 9. [UU 远程](https://uuyc.163.com/)，由知名大厂出品，目前免费使用。不足之处在于仅支持 Windows 10 及以上系统。
 10. [Motrix](https://motrix.app/)，是一款开源免费的下载工具，支持多线程加速下载。值得注意的是，此软件已有两年未更新，不过当前版本能满足基本需求。
 11. [Mpv.net](https://github.com/mpvnet-player/mpv.net)，是 Mpv 的轻量级图形前端，界面简洁，支持硬件加速，播放流畅，可作为 PotPlayer 的升级替代软件。
+12. [Obsidian](https://obsidian.md/)，是一个开源的笔记管理软件，支持 Markdown 格式，具有丰富的插件支持，可扩展性高，可定制性强。
 
 # 开发软件
 
 ## 环境
 
 1. Java: JDK、MAVEN
-2. Typst
-3. UV
+2. [Typst](https://typst.app/)，是一个开源的排版系统，可实时查看渲染结果，比 LaTeX 更加友好。
+3. [UV](https://astral.sh/uv)，现代化的 Python 包管理工具。
 4. NPM
 5. Go
 
