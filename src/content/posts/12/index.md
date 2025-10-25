@@ -7,8 +7,7 @@ category: "技术"
 draft: false
 lang: "cn"
 ---
-
-# Intor
+# Intro
 
 上一版的“恢复工作环境”方案已显著滞后于时代发展。本版本旨在从〇开始，恢复一个可用于实际生产的计算机环境。
 
@@ -16,25 +15,25 @@ lang: "cn"
 
 # 镜像选择
 
-为保障信息安全，本文不建议选用第三方精简的系统镜像，此类镜像可能会被植入大量广告，甚至暗藏病毒。本文建议于[微软官网](https://www.microsoft.com/zh-cn/software-download/windows11)下载镜像，或借助[I tell you](https://next.itellyou.cn/)下载站下载纯净的官方镜像。
+为保障信息安全，本文不建议选用第三方精简的系统镜像，此类镜像可能会被植入大量广告，甚至暗藏病毒。本文建议于[微软官网](https://www.microsoft.com/zh-cn/software-download/windows11)下载镜像，或借助 [I tell you](https://next.itellyou.cn/) 下载站下载纯净的官方镜像。
 
 > 本文选取 Windows 11 25H2 家庭版，原因在于笔记本出厂时已预装正版 Windows 系统。本文不提倡任何盗版激活方式，仅通过合法授权渠道进行操作。本文所选用的软件大多为免费或开源工具，以确保使用的合规性。
 
-然而，由于原版镜像过于庞大，本文将运用[Tiny 11 Builder](https://github.com/ntdevlabs/tiny11builder)工具制作精简版镜像，在保留核心功能的基础上移除冗余组件。
+然而，由于原版镜像过于庞大，本文将运用 [Tiny 11 Builder](https://github.com/ntdevlabs/tiny11builder) 工具制作精简版镜像，在保留核心功能的基础上移除冗余组件。
 
 # 系统安装
 
 1. 下载原版镜像。
 2. 双击原版镜像，使镜像挂载，并记录下驱动器盘符。
-3. 运用 Tiny 11 Builder 工具精简镜像。本文建议使用 tiny11maker.ps1，而非 tiny11coremaker.ps1，因为后者精简程度过高，不适用于日常使用。
+3. 运用 Tiny 11 Builder 工具精简镜像。本文建议使用 `tiny11maker.ps1`，而非 `tiny11coremaker.ps1`，因为后者精简程度过高，不适用于日常使用。
 4. 依据脚本引导输入挂载的驱动器盘符，脚本将自动运行。
-5. 将生成的 tiny.iso 文件烧录至启动盘。也可使用 Ventoy，Ventoy 是一款支持多镜像启动的开源工具，能够将多个 ISO 文件写入同一个 U 盘。
+5. 将生成的 tiny.iso 文件烧录至启动盘。也可使用 [Ventoy](https://www.ventoy.net/cn/)，Ventoy 是一款支持多镜像启动的开源工具，能够将多个 ISO 文件写入同一个 U 盘。
 6. 下载一个 Chrome 安装程序放到 U 盘中，因为此镜像会精简臃肿的边缘浏览器。
 7. 安装镜像。
 
-安装过程依照引导完成即可，无需进行额外操作。安装完成后，系统将进入 OOBE 界面，此时请勿联网，此镜像会自动添加无网络选项，无需运行脚本。选择“我没有 Internet 连接”，然后输入用户名。若连接网络，系统将强制要求登录微软账户，并且微软会将用户名设置为微软邮箱的前 5 位，无法进行自定义，因此建议选择无 Internet 连接。密码可按需设置。
+安装过程依照引导完成即可，无需进行额外操作。安装完成后，系统将进入OOBE界面，此时请勿联网，此镜像会自动添加无网络选项，无需运行脚本。选择“我没有 Internet 连接”，然后输入用户名。若连接网络，系统将强制要求登录微软账户，并且微软会将用户名设置为微软邮箱的前5位，无法进行自定义，因此建议选择无 Internet 连接。密码可按需设置。
 
-进入系统后，连接网络，进入 Windows 更新界面进行手动更新，以获取最新的 Windows 更新补丁并修复已知漏洞，确保系统的安全与稳定。同时，Windows 更新会自动下载常见驱动程序，减少手动安装驱动的繁琐流程。不过，需要注意的是，并非所有驱动都能通过 Windows 更新获取，且获取到的驱动也可能并非最新版本，因此建议前往笔记本制造商的官方网站下载适配当前型号的驱动程序包。
+进入系统后，连接网络，进入 Windows 更新界面进行手动更新，以获取最新的Windows更新补丁并修复已知漏洞，确保系统的安全与稳定。同时，Windows 更新会自动下载常见驱动程序，减少手动安装驱动的繁琐流程。不过，需要注意的是，并非所有驱动都能通过 Windows 更新获取，且获取到的驱动也可能并非最新版本，因此建议前往笔记本制造商的官方网站下载适配当前型号的驱动程序包。
 
 本文不建议关闭 Windows 更新，关闭 Windows 更新后，系统可能存在未修复的安全风险，易遭受恶意软件攻击，且无法获取功能改进和性能优化。
 
@@ -61,24 +60,25 @@ lang: "cn"
 
 ## 环境
 
-1. Java: JDK、MAVEN
-2. [Typst](https://typst.app/)，是一个开源的排版系统，可实时查看渲染结果，比 LaTeX 更加友好。
+1. Java: [JDK](https://learn.microsoft.com/zh-cn/java/openjdk/download)、[Maven](https://maven.apache.org/)。亦可选择镜像站[清华大学开源软件镜像站中的Maven
+](https://mirrors.tuna.tsinghua.edu.cn/apache/maven/)
+2. [Typst](https://typst.app/)，是一个开源的排版系统，可实时查看渲染结果，比[LaTeX](https://www.latex-project.org/)更加友好。
 3. [UV](https://astral.sh/uv)，现代化的 Python 包管理工具。
-4. NPM
-5. Go
+4. [Node.js](https://nodejs.org)，JavaScript运行时。
+5. [Go](https://go.dev/)或者[Go中国官网](https://golang.google.cn/)。
 
 ## 软件
 
-1. Zed
-2. Vscode
-3. JetBrains。使用学生版或社区版。
-4. Claude Code。使用第三方 Api，不使用 Anthropic 服务。
+1. [Zed](https://zed.dev/)
+2. [Vscode](https://code.visualstudio.com/)
+3. [JetBrains](https://www.jetbrains.com/)。使用学生版或社区版。
+4. [Claude Code](https://www.claude.com/product/claude-code)。由于该公司反华立场，本文使用第三方 Api，不使用 Anthropic 服务，并积极寻求替代。
 
 # 字体
 
-1. MiSans
-2. Source Han Serif
-3. Maple Mono
+1. [MiSans](https://hyperos.mi.com/font/)
+2. [Source Han Serif](https://github.com/adobe-fonts/source-han-serif)。多字重，开源免费，比 Windows 内置的宋体好看。也可使用镜像站，[清华源中的Source Han Serif](https://mirrors.tuna.tsinghua.edu.cn/adobe-fonts/source-han-serif/)。
+3. [Maple Mono](https://font.subf.dev/en/)
 
 # 软件配置
 
@@ -87,3 +87,7 @@ lang: "cn"
 # 环境变量
 
 # WSL 设置
+
+# 附录
+## 常用连接
+[清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/)
