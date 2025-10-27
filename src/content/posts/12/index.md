@@ -55,6 +55,7 @@ lang: "cn"
 10. [Motrix](https://motrix.app/)，是一款开源免费的下载工具，支持多线程加速下载。值得注意的是，此软件已有两年未更新，不过当前版本能满足基本需求。
 11. [Mpv.net](https://github.com/mpvnet-player/mpv.net)，是 Mpv 的轻量级图形前端，界面简洁，支持硬件加速，播放流畅，可作为 PotPlayer 的升级替代软件。
 12. [Obsidian](https://obsidian.md/)，是一个开源的笔记管理软件，支持 Markdown 格式，具有丰富的插件支持，可扩展性高，可定制性强。
+13. [DirectX 修复工具](https://blog.csdn.net/VBcom/article/details/6962388)，一键修复 DirectX 运行环境，保障软件正常运行。
 
 # 开发软件
 
