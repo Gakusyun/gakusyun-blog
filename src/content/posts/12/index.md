@@ -56,7 +56,8 @@ lang: "cn"
 11. [Mpv.net](https://github.com/mpvnet-player/mpv.net)，是 Mpv 的轻量级图形前端，界面简洁，支持硬件加速，播放流畅，可作为 PotPlayer 的升级替代软件。
 12. [Obsidian](https://obsidian.md/)，是一个开源的笔记管理软件，支持 Markdown 格式，具有丰富的插件支持，可扩展性高，可定制性强。
 13. [DirectX 修复工具](https://blog.csdn.net/VBcom/article/details/6962388)，一键修复 DirectX 运行环境，保障软件正常运行。
-
+## 界面美化
+1. [TranslucentTB](https://apps.microsoft.com/detail/9PF4KZ2VN4W9)，可以自定义Windows任务栏。
 # 开发软件
 
 ## 环境
@@ -70,25 +71,51 @@ lang: "cn"
 
 ## 软件
 
-1. [Zed](https://zed.dev/)
-2. [Vscode](https://code.visualstudio.com/)
-3. [JetBrains](https://www.jetbrains.com/)。使用学生版或社区版。
-4. [Claude Code](https://www.claude.com/product/claude-code)。由于该公司反华立场，本文使用第三方 Api，不使用 Anthropic 服务，并积极寻求替代。
+1. [Zed](https://zed.dev/)，使用Rust编写的编辑器，内存占用优于VSCode，目前不支持中文
+2. [VSCode](https://code.visualstudio.com/)，$^{目标}$宇宙最强编辑器
+3. [JetBrains](https://www.jetbrains.com/)，使用学生版或社区版。
+4. [Claude Code](https://www.claude.com/product/claude-code)。由于该公司反华立场，笔者使用第三方 Api，不使用 Anthropic 服务，并积极寻求替代。
 
 # 字体
 
-1. [MiSans](https://hyperos.mi.com/font/)
-2. [Source Han Serif](https://github.com/adobe-fonts/source-han-serif)。多字重，开源免费，比 Windows 内置的宋体好看。也可使用镜像站，[清华源中的Source Han Serif](https://mirrors.tuna.tsinghua.edu.cn/adobe-fonts/source-han-serif/)。
-3. [Maple Mono](https://font.subf.dev/en/)
+1. [MiSans](https://hyperos.mi.com/font/)，还不错的等线字体。
+2. [Source Han Serif](https://github.com/adobe-fonts/source-han-serif)，多字重，开源免费，比 Windows 内置的宋体好看。也可使用镜像站，[清华源中的Source Han Serif](https://mirrors.tuna.tsinghua.edu.cn/adobe-fonts/source-han-serif/)。
+3. [Maple Mono](https://font.subf.dev/en/)，有中文支持的等宽字体。
 
 # 软件配置
-
+## Claude Code 安装
+```shell
+npm install -g @anthropic-ai/claude-code
+```
+运行如下命令，查看安装结果，若显示版本号则表示安装成功
+```shell
+claude --version
+```
+### 使用 GLM 模型
+运行如下命令，并按照提示输入 API Key
+```shell
+curl -O "https://cdn.bigmodel.cn/install/claude_code_env.sh" && bash ./claude_code_env.sh
+```
+或者手动编辑~/.claude/settings.json
+```json
+{
+    "env": {
+        "ANTHROPIC_AUTH_TOKEN": "your_zhipu_api_key",
+        "ANTHROPIC_BASE_URL": "https://open.bigmodel.cn/api/anthropic",
+        "API_TIMEOUT_MS": "3000000",
+        "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": 1
+    }
+}
+```
 ## 终端配置
+[Oh My Posh](https://www.ohmyposh.dev/)
 
 # 环境变量
 
 # WSL 设置
 
 # 附录
-## 常用连接
+## 常用链接
 [清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/)
+
+[中国科学技术大学开源软件镜像站](http://mirrors.ustc.edu.cn/)
