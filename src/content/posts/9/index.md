@@ -1,6 +1,6 @@
 ---
 title: 喜报！全国表彰！
-published: 2025-08-20
+published: 2025-08-25
 description: "服务人民 奉献社会"
 tags: ["献血"]
 category: "文字"
