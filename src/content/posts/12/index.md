@@ -83,21 +83,36 @@ lang: "cn"
 3. [Maple Mono](https://font.subf.dev/en/)，有中文支持的等宽字体。
 
 # 软件配置
-## Claude Code 安装
+## Claude Code
+### 安装Claude Code
+#### PowerShell
+```shell
+irm https://claude.ai/install.ps1 | iex
+```
+#### MacOS or Linux
+```shell
+curl -fsSL https://claude.ai/install.sh | bash
+```
+#### Homebrew
+```shell
+brew install --cask claude-code
+```
+#### Node.js
 ```shell
 npm install -g @anthropic-ai/claude-code
 ```
-运行如下命令，查看安装结果，若显示版本号则表示安装成功
-```shell
-claude --version
-```
-### 使用 GLM 模型
-运行如下命令，并按照提示输入 API Key
+### 使用GLM Api
+#### 自动化脚本
+> 会自动检测是否安装node，如果使用原生安装，建议不要使用
 ```shell
 curl -O "https://cdn.bigmodel.cn/install/claude_code_env.sh" && bash ./claude_code_env.sh
 ```
-或者手动编辑~/.claude/settings.json
-```json
+#### 手动配置
+##### MacOS or Linux
+```shell
+# 编辑或新增 Claude Code 配置文件 `~/.claude/settings.json`
+# 新增或修改里面的 env 字段
+# 注意替换里面的 `your_zhipu_api_key` 为您上一步获取到的 API Key
 {
     "env": {
         "ANTHROPIC_AUTH_TOKEN": "your_zhipu_api_key",
@@ -107,8 +122,26 @@ curl -O "https://cdn.bigmodel.cn/install/claude_code_env.sh" && bash ./claude_co
     }
 }
 ```
-## 终端配置
-[Oh My Posh](https://www.ohmyposh.dev/)
+#### Windows CMD
+```shell
+# 在 Cmd 中运行以下命令
+# 注意替换里面的 `your_zhipu_api_key` 为您上一步获取到的 API Key
+setx ANTHROPIC_AUTH_TOKEN your_zhipu_api_key
+setx ANTHROPIC_BASE_URL https://open.bigmodel.cn/api/anthropic
+setx CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC 1
+```
+#### PowerShell
+```shell
+# 在 PowerShell 中运行以下命令
+# 注意替换里面的 `your_zhipu_api_key` 为您上一步获取到的 API Key
+[System.Environment]::SetEnvironmentVariable('ANTHROPIC_AUTH_TOKEN', 'your_zhipu_api_key', 'User')
+[System.Environment]::SetEnvironmentVariable('ANTHROPIC_BASE_URL', 'https://open.bigmodel.cn/api/anthropic', 'User')
+[System.Environment]::SetEnvironmentVariable('CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC', '1', 'User')
+```
+### MCP
+```shell
+claude mcp add chrome-devtools npx chrome-devtools-mcp@latest
+```
 
 # 环境变量
 
