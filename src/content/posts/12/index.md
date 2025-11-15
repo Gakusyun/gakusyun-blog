@@ -1,7 +1,7 @@
 ---
 title: 恢复工作环境 on Windows (2025)
 published: 2025-10-24
-description: "1024程序员日快乐！"
+description: "1024 程序员日快乐！"
 tags: ["windows", "Linux"]
 category: "技术"
 draft: false
@@ -31,9 +31,9 @@ lang: "cn"
 6. 下载一个 Chrome 安装程序放到 U 盘中，因为此镜像会精简臃肿的边缘浏览器。
 7. 安装镜像。
 
-安装过程依照引导完成即可，无需进行额外操作。安装完成后，系统将进入OOBE界面，此时请勿联网，此镜像会自动添加无网络选项，无需运行脚本。选择“我没有 Internet 连接”，然后输入用户名。若连接网络，系统将强制要求登录微软账户，并且微软会将用户名设置为微软邮箱的前5位，无法进行自定义，因此建议选择无 Internet 连接。密码可按需设置。
+安装过程依照引导完成即可，无需进行额外操作。安装完成后，系统将进入 OOBE 界面，此时请勿联网，此镜像会自动添加无网络选项，无需运行脚本。选择“我没有 Internet 连接”，然后输入用户名。若连接网络，系统将强制要求登录微软账户，并且微软会将用户名设置为微软邮箱的前5位，无法进行自定义，因此建议选择无 Internet 连接。密码可按需设置。
 
-进入系统后，连接网络，进入 Windows 更新界面进行手动更新，以获取最新的Windows更新补丁并修复已知漏洞，确保系统的安全与稳定。同时，Windows 更新会自动下载常见驱动程序，减少手动安装驱动的繁琐流程。不过，需要注意的是，并非所有驱动都能通过 Windows 更新获取，且获取到的驱动也可能并非最新版本，因此建议前往笔记本制造商的官方网站下载适配当前型号的驱动程序包。
+进入系统后，连接网络，进入 Windows 更新界面进行手动更新，以获取最新的 Windows更新补丁并修复已知漏洞，确保系统的安全与稳定。同时，Windows 更新会自动下载常见驱动程序，减少手动安装驱动的繁琐流程。不过，需要注意的是，并非所有驱动都能通过 Windows 更新获取，且获取到的驱动也可能并非最新版本，因此建议前往笔记本制造商的官方网站下载适配当前型号的驱动程序包。
 
 本文不建议关闭 Windows 更新，关闭 Windows 更新后，系统可能存在未修复的安全风险，易遭受恶意软件攻击，且无法获取功能改进和性能优化。
 
@@ -44,7 +44,7 @@ lang: "cn"
 此处罗列了一些关键软件，它们属于通用设置，适用于所有用户。
 
 1. [Chrome 浏览器](https://www.google.cn/chrome/index.html)，在卸载微软边缘浏览器后，它是最佳之选。尽管在内存占用方面稍显庞大，但关闭后可完全退出，不占用内存，不像某款边缘浏览器会在后台持续驻留。
-2. [Nana-Zip](https://github.com/M2Team/NanaZip)，这是一款基于[7-Zip](https://www.7-zip.org/)的文件压缩工具，针对 Windows 11 系统进行了深度适配，界面简洁，操作流畅，略胜 7-Zip 一筹。
+2. [Nana-Zip](https://github.com/M2Team/NanaZip)，这是一款基于 [7-Zip](https://www.7-zip.org/) 的文件压缩工具，针对 Windows 11 系统进行了深度适配，界面简洁，操作流畅，略胜 7-Zip 一筹。
 3. [火绒安全](https://www.huorong.cn/)，作为轻量级防护软件，能有效拦截弹窗和恶意程序，对系统资源占用极低，适合追求纯净使用体验的用户。不过其病毒防御能力较弱，适合对系统已知无害行为不过多干预的用户。新手建议使用 360 极速版，其杀毒能力相较于火绒安全较强。
 4. [WPS Office](https://www.wps.cn/)，是办公套件的首选，无第三方广告，兼容性强，支持多端同步，文档协作方便快捷。建议优先选择 X64 版。
 5. [Everything](https://www.voidtools.com/)，是一款本地文件搜索工具，响应速度极快，支持正则表达式和通配符，搜索效率远超系统自带的搜索功能。
@@ -64,25 +64,34 @@ lang: "cn"
 
 1. Java: [JDK](https://learn.microsoft.com/zh-cn/java/openjdk/download)、[Maven](https://maven.apache.org/)。亦可选择镜像站[清华大学开源软件镜像站中的Maven
 ](https://mirrors.tuna.tsinghua.edu.cn/apache/maven/)
-2. [Typst](https://typst.app/)，是一个开源的排版系统，可实时查看渲染结果，比[LaTeX](https://www.latex-project.org/)更加友好。
+2. [Typst](https://typst.app/)，是一个开源的排版系统，可实时查看渲染结果，比 [LaTeX](https://www.latex-project.org/) 更加友好。
 3. [UV](https://astral.sh/uv)，现代化的 Python 包管理工具。
-4. [Node.js](https://nodejs.org)，JavaScript运行时。
-5. [Go](https://go.dev/)或者[Go中国官网](https://golang.google.cn/)。
+4. [Node.js](https://nodejs.org)，JavaScript 运行时。
+5. [Go](https://go.dev/)或者 [Go 中国官网](https://golang.google.cn/)。
 
 ## 软件
 
-1. [Zed](https://zed.dev/)，使用Rust编写的编辑器，内存占用优于VSCode，目前不支持中文
+1. [Zed](https://zed.dev/)，使用 Rust 编写的编辑器，内存占用优于 VSCode，目前不支持中文
 2. [VSCode](https://code.visualstudio.com/)，$^{目标}$宇宙最强编辑器
 3. [JetBrains](https://www.jetbrains.com/)，使用学生版或社区版。
 4. [Claude Code](https://www.claude.com/product/claude-code)。由于该公司反华立场，笔者使用第三方 Api，不使用 Anthropic 服务，并积极寻求替代。
-
+5. [iflow Cli](https://iflow.cn/)。Claude Code 替代，免费。
 # 字体
 
 1. [MiSans](https://hyperos.mi.com/font/)，还不错的等线字体。
 2. [Source Han Serif](https://github.com/adobe-fonts/source-han-serif)，多字重，开源免费，比 Windows 内置的宋体好看。也可使用镜像站，[清华源中的Source Han Serif](https://mirrors.tuna.tsinghua.edu.cn/adobe-fonts/source-han-serif/)。
 3. [Maple Mono](https://font.subf.dev/en/)，有中文支持的等宽字体。
 
-# 软件配置
+# 软件、配置
+## 允许 PowerShell 运行脚本
+只对当前用户有效
+```shell
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+## Nodejs 切换淘宝镜像
+```shell
+npm config set registry https://registry.npmmirror.com
+```
 ## Claude Code
 ### 安装Claude Code
 #### PowerShell
@@ -103,13 +112,13 @@ npm install -g @anthropic-ai/claude-code
 ```
 ### 使用GLM Api
 #### 自动化脚本
-> 会自动检测是否安装node，如果使用原生安装，建议不要使用
+> 会自动检测是否安装 node，如果使用原生安装，建议不要使用
 ```shell
 curl -O "https://cdn.bigmodel.cn/install/claude_code_env.sh" && bash ./claude_code_env.sh
 ```
 #### 手动配置
 ##### MacOS or Linux
-```shell
+```json
 # 编辑或新增 Claude Code 配置文件 `~/.claude/settings.json`
 # 新增或修改里面的 env 字段
 # 注意替换里面的 `your_zhipu_api_key` 为您上一步获取到的 API Key
@@ -139,11 +148,20 @@ setx CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC 1
 [System.Environment]::SetEnvironmentVariable('CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC', '1', 'User')
 ```
 ### MCP
+Chrome Devtools MCP 让 Ai 可以轻松操控 Chrome 进行前端的调试
 ```shell
 claude mcp add chrome-devtools npx chrome-devtools-mcp@latest
 ```
-
-# 环境变量
+## SSH
+创建 SSH 密钥对
+```shell
+ssh-keygen -t ed25519 -C "这里随便填"
+```
+## Git
+```shell
+git config --global user.name 'Gakusyun'
+git config --global user.email 'gxj@gxj62.cn'
+```
 
 # WSL 设置
 
