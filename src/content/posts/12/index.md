@@ -72,7 +72,7 @@ lang: "cn"
 ## 软件
 
 1. [Zed](https://zed.dev/)，使用 Rust 编写的编辑器，内存占用优于 VSCode，目前不支持中文
-2. [VSCode](https://code.visualstudio.com/)，$^{目标}$宇宙最强编辑器
+2. [VSCode](https://code.visualstudio.com/)，宇宙最强编辑器
 3. [JetBrains](https://www.jetbrains.com/)，使用学生版或社区版。
 4. [Claude Code](https://www.claude.com/product/claude-code)。由于该公司反华立场，笔者使用第三方 Api，不使用 Anthropic 服务，并积极寻求替代。
 5. [iflow Cli](https://iflow.cn/)。Claude Code 替代，免费。
