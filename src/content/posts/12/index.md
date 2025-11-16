@@ -63,21 +63,21 @@ lang: "cn"
 # 开发软件
 
 ## 环境
-
-1. Java: [JDK](https://learn.microsoft.com/zh-cn/java/openjdk/download)、[Maven](https://maven.apache.org/)。亦可选择镜像站[清华大学开源软件镜像站中的Maven
+1. [Git](https://git-scm.com/)：[USTC 镜像](https://mirrors.ustc.edu.cn/github-release/git-for-windows/git/LatestRelease/)，万物之源。
+2. Java: [JDK](https://learn.microsoft.com/zh-cn/java/openjdk/download)、[Maven](https://maven.apache.org/)。亦可选择镜像站[清华大学开源软件镜像站中的Maven
 ](https://mirrors.tuna.tsinghua.edu.cn/apache/maven/)
-2. [Typst](https://typst.app/)，是一个开源的排版系统，可实时查看渲染结果，比 [LaTeX](https://www.latex-project.org/) 更加友好。
-3. [UV](https://astral.sh/uv)，现代化的 Python 包管理工具。
-4. [Node.js](https://nodejs.org)，JavaScript 运行时。
-5. [Go](https://go.dev/)或者 [Go 中国官网](https://golang.google.cn/)。
+3. [Typst](https://typst.app/)，[USTC 镜像](https://mirrors.ustc.edu.cn/github-release/typst/typst/LatestRelease/)，是一个开源的排版系统，可实时查看渲染结果，比 [LaTeX](https://www.latex-project.org/) 更加友好。
+4. [UV](https://astral.sh/uv)，现代化的 Python 包管理工具。
+5. [Node.js](https://nodejs.org)，[USTC 镜像](https://mirrors.ustc.edu.cn/node/)，JavaScript 运行时。
+6. [Go](https://go.dev/)或者 [Go 中国官网](https://golang.google.cn/)。
 
 ## 软件
 
 1. [Zed](https://zed.dev/)，使用 Rust 编写的编辑器，内存占用优于 VSCode，目前不支持中文
 2. [VSCode](https://code.visualstudio.com/)，宇宙最强\[1\]编辑器
 3. [JetBrains](https://www.jetbrains.com/)，使用学生版或社区版。
-4. [Claude Code](https://www.claude.com/product/claude-code)。由于该公司反华立场，笔者使用第三方 Api，不使用 Anthropic 服务，并积极寻求替代。
-5. [iflow Cli](https://iflow.cn/)。Claude Code 替代，免费。
+4. [Claude Code](https://www.claude.com/product/claude-code)，由于该公司反华立场，笔者使用第三方 Api，不使用 Anthropic 服务，并积极寻求替代。
+5. [iflow Cli](https://iflow.cn/)，Claude Code 替代，免费。
 # 字体
 
 1. [MiSans](https://hyperos.mi.com/font/)，还不错的等线字体。
@@ -93,6 +93,15 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 ## Nodejs 切换淘宝镜像
 ```shell
 npm config set registry https://registry.npmmirror.com
+```
+## UV
+### Windows
+```shell
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+### Linux or MacOS
+```shell
+curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 ## Claude Code
 ### 安装Claude Code
