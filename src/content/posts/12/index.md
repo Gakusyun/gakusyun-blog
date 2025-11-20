@@ -116,6 +116,12 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 ```shell
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
+## Go
+国内镜像
+```shell
+go env -w GO111MODULE=on
+go env -w GOPROXY=https://goproxy.cn,direct
+```
 ## Claude Code
 ### 安装Claude Code
 #### PowerShell
