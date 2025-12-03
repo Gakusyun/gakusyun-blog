@@ -1,7 +1,7 @@
 ---
 title: 伽库噚文字模板正式发布
 published: 2025-12-03
-description: ""
+description: "伽库噚文字模板是一个专为中文排版设计的Typst文档模板，适合快速开始记录，也提供了高度自定义的参数设置。"
 tags: ["Typst", "文字排版"]
 category: "技术"
 draft: false
