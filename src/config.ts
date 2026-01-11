@@ -31,12 +31,11 @@ export const siteConfig: SiteConfig = {
 		depth: 2, // 目录中显示的最大标题层级，范围为 1 到 3
 	},
 	favicon: [
-		// 留空此数组将使用默认的 favicon
-		// {
-		//   src: '/favicon/icon.png',    // favicon 路径，相对于 /public 目录
-		//   theme: 'light',              // （可选）可选 'light' 或 'dark'，仅在亮色和暗色模式使用不同图标时设置
-		//   sizes: '32x32',              // （可选）图标的尺寸，仅在使用不同尺寸图标时设置
-		// }
+		{
+			src: '/favicon/favicon.ico',    // favicon 路径，相对于 /public 目录
+			//   theme: 'light',              // （可选）可选 'light' 或 'dark'，仅在亮色和暗色模式使用不同图标时设置
+			//   sizes: '32x32',              // （可选）图标的尺寸，仅在使用不同尺寸图标时设置
+		}
 	],
 };
 
@@ -44,6 +43,7 @@ export const siteConfig: SiteConfig = {
 export const navBarConfig: NavBarConfig = {
 	links: [
 		LinkPreset.Home, // 首页链接
+		LinkPreset.Blog, // 博客页面链接
 		LinkPreset.Archive, // 归档页面链接
 		LinkPreset.About, // 关于页面链接
 		{
@@ -56,7 +56,11 @@ export const navBarConfig: NavBarConfig = {
 
 // 个人资料配置
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/ao.jpg", // 头像路径，相对于 /src 目录；若以 '/' 开头，则相对于 /public 目录
+	avatar: [ // 头像数组，每次访问随机选择一张
+		"assets/images/ao.jpg",
+		"assets/images/aotomira.webp",
+		"assets/images/bujishibou.webp",
+	],
 	name: "Gakusyun", // 姓名
 	bio: "我要成为计算机Master!", // 个人简介
 	links: [
